@@ -1,4 +1,8 @@
 /**PARA EL BOTON***/
+body {
+  padding: 0;
+  margin: 0;
+}
 /* HEADER*/
 .header_section {
   background-color: #fff;
@@ -8,27 +12,28 @@
   justify-content: center;
 }
 .header_section .navbar {
-  max-width: 1200px;
-  width: 100%;
+  width: 100vw;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding-inline: 3vw;
+  gap: 2vw;
 }
 .header_section .navbar .navbar-brand img {
-  height: 40px;
+  height: 3vw;
 }
 .header_section .navbar .navbar-collapse {
   display: flex;
   justify-content: center;
+  width: 70vw;
 }
 .header_section .navbar .navbar-collapse .navbar-nav {
   list-style: none;
   display: flex;
+  gap: 1vw;
 }
-.header_section .navbar .navbar-collapse .navbar-nav .nav-item {
-  margin-left: 30px;
-}
+
 .header_section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   text-decoration: none;
   color: #000;
@@ -36,31 +41,52 @@
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
+  transition: font-size 0.2s ease;
 }
+.header_section .navbar .navbar-collapse .navbar-nav .nav-item {
+  display: block;
+
+  height: 10vh;
+  align-content: center;
+}
+.header_section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #777;
+  font-size: 18px;
+}
+
 .header_section .navbar .navbar-collapse .form-inline {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  gap: 2vh;
 }
 .header_section .navbar .navbar-collapse .form-inline .login_bt a {
   text-decoration: none;
-  color: #222;
+  color: white;
   font-weight: bold;
-  margin-right: 15px;
+  margin-right: 1vh;
   padding: 10px 20px;
-  border-radius: 5px;
+  background-color: #ff69b4;
+  border-radius: 0.3em;
+}
+.header_section .navbar .navbar-collapse .form-inline .login_bt a:hover {
+  background-color: #ff1493;
 }
 .header_section .navbar .navbar-collapse .form-inline .login_bt a i {
-  margin-left: 5px;
+  margin-left: 1vh;
 }
+
 .header_section .navbar .navbar-collapse .form-inline .fa-search {
   font-size: 18px;
   color: #222;
+  cursor: pointer;
+  transition: font-size 0.2s ease;
+}
+.header_section .navbar .navbar-collapse .form-inline .fa-search:hover {
+  font-size: 22px;
 }
 /*CONTAINER*/
-.container {
-  padding: 20px 0;
-}
+
 .container .row {
   display: flex;
   justify-content: center;
@@ -267,6 +293,7 @@
   width: 100%;
   max-width: 300px;
   margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .services_section .services_section_2 .services_box .tasty_text {
   font-size: 1.5rem;
@@ -282,7 +309,11 @@
   max-width: 40px;
   margin-bottom: 10px;
 }
-.services_section .seemore_bt {
+.services_section .services_section_2 .services_box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.seemore_bt {
   display: inline-block;
   padding: 10px 20px;
   background-color: #ff69b4;
@@ -291,10 +322,10 @@
   font-size: 1rem;
   text-decoration: none;
 }
-.services_section .seemore_bt:hover {
+.seemore_bt:hover {
   background-color: #ff1493;
 }
-/* testimonioooooos */
+/* tetimonioooooos */
 .testimonial_section .container {
   text-align: center;
 }
