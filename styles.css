@@ -350,3 +350,120 @@ body {
   border-radius: 0;
   margin-top: 10px;
 }
+/*FOOOOOOOOTER*/
+
+  footer.footer_section {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  footer h1, footer h3 {
+    color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+
+  footer form input,
+  footer form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  footer form input:focus,
+  footer form textarea:focus {
+    background-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px #f303bf;
+  }
+
+  footer button {
+    background-color: #ff00ea;
+    color: #000;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+  }
+
+  footer button:hover {
+    background-color: #f508f5;
+    transform: scale(1.05);
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  footer ul li {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  footer a {
+    color: #f508f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #ffffff;
+  }
+
+  footer i.fa {
+    margin-right: 8px;
+  }
+
+  footer .fa-facebook,
+  footer .fa-twitter,
+  footer .fa-linkedin,
+  footer .fa-instagram {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  footer .fa-facebook:hover,
+  footer .fa-twitter:hover,
+  footer .fa-linkedin:hover,
+  footer .fa-instagram:hover {
+    transform: scale(1.2);
+    color: #f508f5;
+  }
+
+  .copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  /* Animación de entrada */
+  footer.footer_section {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
