@@ -380,7 +380,7 @@ body {
 
   footer form input:focus,
   footer form textarea:focus {
-    background-color: #333;
+    background-color: #000000;
     outline: none;
     box-shadow: 0 0 5px #f303bf;
   }
