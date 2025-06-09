@@ -1,0 +1,22 @@
+{
+  "name": "pc02",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris3012Mega/PC02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chris3012Mega/PC02/issues"
+  },
+  "homepage": "https://github.com/Chris3012Mega/PC02#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.30"
+  }
+}
