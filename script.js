@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 800,
     delay: 200,
     easing: "ease-in-out",
-    reset: true, // si quieres que se vuelva a activar al hacer scroll
+    reset: true, 
   });
   ScrollReveal().reveal(".scroll-element-bottom", {
     origin: "bottom",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 800,
     delay: 200,
     easing: "ease-in-out",
-    reset: true, // si quieres que se vuelva a activar al hacer scroll
+    reset: true,
   });
 });
 
