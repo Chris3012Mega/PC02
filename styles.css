@@ -108,7 +108,7 @@ main {
   font-size: 1.1rem; 
   color: #222;
   cursor: pointer;
-  transition: font-size 0.3s ease, color 0.3s ease;
+  transition: font-size 0.3s ease, color 0.3s ease; /*Transition*/
 }
 
 .header_section .navbar .navbar-collapse .form-inline .fa-search:hover {
@@ -816,7 +816,7 @@ footer.footer_section {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #333; 
+  color: #333; /* Color for the toggler icon */
   transition: color 0.3s ease;
 }
 .navbar-toggler:hover {
