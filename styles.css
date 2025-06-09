@@ -78,6 +78,12 @@ body {
   margin-left: 20px;
   gap: 1.5vh; /* Adjusted gap */
 }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .header_section .navbar .navbar-collapse .form-inline .login_bt a {
   text-decoration: none;
@@ -113,10 +119,7 @@ body {
 /* CONTAINER - Main Banner/Hero Section */
 .container {
   width: 100%;
-  max-width: 1200px; /* Increased max-width for wider screens */
-  margin: 0 auto;
   background: #f8f8f8; /* Light background for the container */
-  padding: 40px 20px; /* Add padding to the container */
   border-radius: 8px; /* Slightly rounded corners */
   margin-top: 20px; /* Space from header */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
@@ -128,16 +131,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 0; /* Reset margin top */
-  padding: 20px 0; /* Padding within the row */
+  padding: 2vh;
+  gap: 5vh;
 }
 
 .container .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  flex: 1; /* Allow columns to grow and shrink */
-  min-width: 300px; /* Minimum width for columns before wrapping */
+  gap: 3vh;
 }
 
 .container .banner_img {
@@ -177,6 +179,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 2vh;
 }
 
 .container .started_text a:hover {
@@ -203,9 +206,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px; /* Adjusted gap */
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 1vh;
   border-radius: 12px; /* Rounded corners for the box */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* More prominent shadow */
   padding: 30px; /* Internal padding */
@@ -269,23 +271,25 @@ body {
 /* OUR FEATURED ICE CREAM SECTION */
 .cream_section {
   background-color: #fff;
-  max-width: 1200px; /* Consistent max-width */
-  margin: 0 auto;
-  padding: 60px 20px; /* Increased padding */
   text-align: center;
   margin-top: 0; /* Reset margin */
+}
+.cream_section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 
 .cream_section .cream_taital {
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 20px;
+
   color: #333;
 }
 
 .cream_section .cream_text {
-  font-size: 1.1rem;
-  margin-bottom: 50px; /* More space before cards */
+  font-size: 2vh;
+
   color: #555;
 }
 
@@ -293,14 +297,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 60px; /* More space before see more button */
+  align-items: center;
+
+  /* More space before see more button */
 }
 
 .cream_section .cream_section_2 .cream_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fdfdfd;
-  width: 300px; /* Fixed width for consistency */
-  padding: 25px; /* Increased padding */
+  width: 30vw;
+  height: auto;
+  padding-block: 2vh;
   border-radius: 15px; /* More rounded corners */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -315,21 +324,20 @@ body {
 .cream_section .cream_section_2 .cream_box .cream_img img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px; /* More space below image */
   border-radius: 8px; /* Rounded image corners */
 }
 
 .cream_section .cream_section_2 .cream_box .price_text {
   font-size: 1.6rem; /* Larger price */
   color: #e91e63;
-  margin-bottom: 15px;
+
   font-weight: 700;
 }
 
 .cream_section .cream_section_2 .cream_box .strawberry_text {
   font-size: 1.3rem; /* Larger text */
   color: #333;
-  margin-bottom: 20px;
+
   font-weight: 600;
 }
 
@@ -620,16 +628,15 @@ body {
 
 /* TESTIMONIAL SECTION */
 .testimonial_section {
+  display: flex;
+
   background-color: #fce4ec; /* Light pink background */
-  padding: 60px 20px;
   text-align: center;
+  padding: 3vh;
 }
 .testimonial_section .container {
-  max-width: 800px; /* Constrain width for testimonial */
-  margin: 0 auto;
   background-color: #fff; /* White background for testimonial box */
   border-radius: 12px;
-  padding: 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 .testimonial_section .container .testimonial_taital {
@@ -662,9 +669,11 @@ body {
 
 /* FOOTER */
 footer.footer_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #1a1a1a; /* Darker background */
   color: #f5f5f5; /* Lighter text color */
-  padding: 60px 20px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   border-top: 5px solid #ff69b4; /* A vibrant top border */
@@ -686,15 +695,16 @@ footer h3 {
 
 footer form input,
 footer form textarea {
-  width: 90%; /* Wider on smaller screens */
-  max-width: 450px; /* Max width for consistency */
-  padding: 14px; /* More padding */
-  margin: 10px 0;
-  border: 1px solid #333; /* Darker border */
-  border-radius: 8px; /* More rounded */
-  background-color: #2b2b2b; /* Slightly lighter input background */
+  width: 90%;
+  max-width: 450px;
+  padding: 2vh;
+  margin: 1vh;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #2b2b2b;
   color: #fff;
   transition: all 0.3s ease;
+  font-size: 2vh;
 }
 
 footer form input:focus,
@@ -746,6 +756,12 @@ footer a {
   color: #ff69b4; /* Pink links */
   text-decoration: none;
   transition: color 0.3s ease;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
 }
 
 footer a:hover {
@@ -812,17 +828,17 @@ footer.footer_section {
   .header_section .navbar .navbar-collapse {
     display: none;
     flex-direction: column;
-    width: 100%; /* Full width */
+    width: 100%;
     background: #fff;
     position: absolute;
-    top: 12vh; /* Adjust based on header height */
+    top: 12vh;
     left: 0;
-    right: 0; /* Make it span full width */
+    right: 0;
     z-index: 100;
     padding: 20px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow */
-    overflow-y: auto; /* Enable scrolling for long menus */
-    max-height: calc(100vh - 12vh); /* Limit height to viewport */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 12vh);
   }
 
   .navbar-toggler {
@@ -837,19 +853,19 @@ footer.footer_section {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 0; /* Remove gap */
+    gap: 0;
   }
 
   .header_section .navbar .navbar-collapse .navbar-nav .nav-item {
     width: 100%;
-    height: auto; /* Auto height for stacked items */
+    height: auto;
     text-align: center;
   }
 
   .header_section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-    padding: 15px 20px; /* More padding for touch targets */
+    padding: 15px 20px;
     width: 100%;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box;
     font-size: 1.1rem;
   }
   .header_section
@@ -858,7 +874,7 @@ footer.footer_section {
     .navbar-nav
     .nav-item
     .nav-link:hover {
-    background-color: #f5f5f5; /* Light background on hover */
+    background-color: #f5f5f5;
   }
 
   .header_section .navbar .navbar-collapse .form-inline {
@@ -868,28 +884,17 @@ footer.footer_section {
     gap: 15px;
   }
   .header_section .navbar .navbar-collapse .form-inline .login_bt a {
-    width: 80%; /* Make login button wider */
+    width: 80%;
     text-align: center;
   }
 
-  .container .row {
-    flex-direction: column;
-    padding: 20px 0;
-  }
-
-  .container .col {
-    padding: 15px;
-    min-width: unset; /* Remove min-width */
-    width: 100%; /* Full width for columns */
-  }
-
   .container .banner_taital {
-    font-size: 2.5rem; /* Adjust title size */
+    font-size: 2.5rem;
     text-align: center;
   }
 
   .container .banner_text {
-    font-size: 1rem; /* Adjust text size */
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -920,6 +925,10 @@ footer.footer_section {
     text-align: center;
   }
 
+  .cream_section .cream_section_2 .cream_box {
+    width: 60vw;
+  }
+
   .cream_section .cream_taital,
   .services_section .services_taital,
   .testimonial_section .container .testimonial_taital {
@@ -938,29 +947,29 @@ footer.footer_section {
   }
 
   .card {
-    flex: 1 1 100%; /* Make cards full width */
+    flex: 1 1 100%;
     padding: 1.5em;
   }
 
   .services_section .services_section_2 .services_box {
-    max-width: 90%; /* Adjust max-width for services boxes */
-    width: auto; /* Allow auto width */
+    max-width: 90%;
+    width: auto;
   }
 
   footer.footer_section {
-    padding: 40px 15px;
+    padding: 4vh 4vh;
   }
 
   footer form input,
   footer form textarea {
-    width: 100%; /* Full width inputs */
+    width: 100%;
     max-width: 350px;
   }
 }
 
 @media (max-width: 480px) {
   .header_section .navbar-brand img {
-    height: 40px; /* Fixed height for very small screens */
+    height: 40px;
   }
 
   .container .banner_taital {
@@ -980,8 +989,12 @@ footer.footer_section {
   }
 
   .cream_section .cream_section_2 .cream_box {
-    width: 100%; /* Full width for ice cream boxes */
-    max-width: 280px; /* Constrain max width for design */
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .cream_section .cream_section_2 .cream_box {
+    width: 70vw;
   }
 
   .cream_section .cream_taital,
